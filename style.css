@@ -1,0 +1,26 @@
+.scanner h1{
+    color: #252839;
+    font-size: 4rem;
+    position: absolute;
+}
+.scanner h1::before{
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px solid #ff1717;
+    overflow: hidden;
+    color: #ff1717;
+    animation: load 4s linear infinite;
+
+}
+@keyframes load {
+    0%, 10%, 100%{
+        width: 0;
+    }
+    60%, 80%{
+        width: 100%;
+    }
+}
